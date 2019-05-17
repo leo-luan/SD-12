@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sistemas Distribuídos - Aula12</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p>
+						Universidade do Estado de Mato Grosso <br />
+						<em>Campus</em> Cáceres <br />
+						Faculdade de Ciências Exatas <br/>
+						Bacharelado em Ciência da Computação
+					</p>
+					<br />
+					<h2>Sistemas Distribuídos</h2>
+					<h4>Capítulo 9 - Segurança</h4>
+					<br />
+					<p>
+						Leonardo Luan Martins da Silva <br />
+						17 de maio de 2019
+					</p>
+				</section>
+
+				<section style="text-align: left; font-size: 80%">
+					<h3>Introdução</h3>
+
+					<section>
+						<ul>
+							<li style='margin-bottom: 20px'>O que é um sistema seguro?</li>
+							<li style='margin-bottom: 20px'>A segurança de um sistema está fortemente relacionada com a noção de confiabilidade.</li>
+							<li>Além disso, um sistema seguro deve garantir a confiabilidade e a integridade</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li style='margin-bottom: 20px'><strong>Confidencialidade</strong> se refere a capacidade de um sistema de computação por meio da qual suas informações são reveladas apenas a partes autorizadas.</li>
+							<li style='margin-bottom: 20px'><strong>Integridade</strong> é a característica pela qual alterações realizadas em ativos de um sistema só podem ser feitas com a devida autorização.</li>
+							<li>Outra maneira de ver a segurança em sistemas é na situação em que tentamos proteger os serviços e dados contra <strong>ameaças à segurança</strong>.</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li style='margin-bottom: 20px'>Há quatro tipos de ameaças à segurança a considerar:</li>
+							<ul>
+								<li style='margin-bottom: 20px'>Interceptação - uma parte não autorizada conseguiu acesso a um serviço ou a dados.</li>
+								<li style='margin-bottom: 20px'>Interrupção - refere-se a situação em que serviços ou dados ficam indisponíveis, são inutilizados, destruídos, etc.</li>
+								<li style='margin-bottom: 20px'>Modificação - envolve alteração não autorizada de dados ou interferência em serviço de modo que ele não execute mais seguindo suas especificações originais.</li>
+								<li>Invenção - refere-se à situação na qual são gerados dados ou atividades adicionais que normalmente não existiriam.</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li style='margin-bottom: 20px'>Para construir um sistema seguro, não basta definir as possíveis ameaças. É preciso estabelecer políticas e mecanismos de segurança.</li>
+							<li style='margin-bottom: 20px'>Políticas de Segurança descrevem com exatidão quais ações as entidades de um determinado sistema têm permissão de realizar e quais são proibidas.</li>
+							<li>Uma vez definidas as políticas de segurança, torna-se possível focalizar os mecanismos de segurança pelos quais uma política pode ser imposta.</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li style='margin-bottom: 20px'>Importantes mecanismos de segurança são:</li>
+							<ul>
+								<li style='margin-bottom: 20px'>Criptografia - fundamental para segurança de computadores. A criptografia transforma dados em algo que um atacante não possa entender, ou seja, implementa a confidencialidade dos dados.</li>
+								<li>Autenticação - usada para verificar a identidade declarada de um usuário, cliente, servidor, ou qualquer outra entidade. A premissa básica é que, antes de começar a realizar qualquer trabalho, um serviço deve conhecer a identidade do solicitante.</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section data-transition="none">
+						<ul>
+							<li style='margin-bottom: 20px'>Importantes mecanismos de segurança são:</li>
+							<ul>
+								<li style='margin-bottom: 20px'>Autorização - após a realização da autenticação, é necessário verificar se um cliente está autorizado a executar uma ação de requisição.</li>
+								<li>Auditoria - são ferramentas utilizadas para rastrear quais clientes acessaram o que e de que modo.</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left; font-size: 78%">
+					<h3>Perguntas</h3>
+
+					<section>
+						<ol>
+							<li style='margin-bottom: 20px'>Cite um exemplo de possível ataque a partir de cada categoria de ameaça apresentada na aula.</li>
+							<li style='margin-bottom: 20px'>Explique a diferença entre Confidencialidade e Integridade no contexto segurança.</li>
+							<li style='margin-bottom: 20px'>O que é uma política de segurança?</li>
+							<li style='margin-bottom: 20px'>Considere que você está projetando um sistema com alto risco de ocorrência de ataques de intervenção, ameaçando a confidencialidade dos dados. Qual mecanismo de segurança você acredita ser ideal nesse contexto?</li>
+							<li style='margin-bottom: 20px'>Explique as diferenças entre Autenticação e Autorização.</li>
+						</ol>
+					</section>
+				</section>
+
+				<section style="text-align: center">
+					<br/><br/><br/><br/>
+					<h5>Aguardem a chamada!<br/><br/>Até a próxima aula!</h5>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				center: false,
+				mouseWheel: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ slideNumber: 'c/t' });
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</body>
+</html>
